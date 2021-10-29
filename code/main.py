@@ -15,10 +15,6 @@ pygame.display.set_icon(pygame.image.load(game_icon))
 # instatiate objects
 level = Level(level_map,screen)
 
-
-
-
-
 while True:
     # Input Handling
     for event in pygame.event.get():
@@ -29,5 +25,5 @@ while True:
     # Updating the Window
     screen.fill((55,50,60))
     level.run()
-    pygame.display.flip()
+    pygame.display.update()
     clock.tick(60)
