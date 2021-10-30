@@ -3,7 +3,7 @@ from settings import *
 from tiles import Tile
 from level import Level
 
-#General setup
+#General setup 
 pygame.init()
 clock = pygame.time.Clock()
 
