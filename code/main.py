@@ -2,6 +2,7 @@ import pygame, sys
 from settings import *
 from tiles import Tile
 from level import Level
+from game_data import level_0
 
 #General setup 
 pygame.init()
@@ -13,7 +14,7 @@ pygame.display.set_caption(game_title)
 pygame.display.set_icon(pygame.image.load(game_icon))
 
 # instatiate objects
-level = Level(level_map,screen)
+level = Level(level_0,screen)
 
 while True:
     # Input Handling
@@ -23,7 +24,7 @@ while True:
             sys.exit()
     
     # Updating the Window
-    screen.fill((55,50,60))
+    screen.fill((125,120,130))
     level.run()
     pygame.display.update()
     clock.tick(60)
